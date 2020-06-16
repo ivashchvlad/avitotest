@@ -6,6 +6,8 @@
   padding: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__title {
@@ -19,10 +21,11 @@
 }
 
 .main {
+  max-width: 1400px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  min-height: 700px;
+  align-items: center;
   margin-right: -20px;
 }
 
@@ -43,6 +46,8 @@ hr {
 
 .footer {
   border-top: 1px solid #CCCCCC;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .footer__copyright {
@@ -54,4 +59,11 @@ hr {
   text-align: center;
   text-transform: uppercase;
   color: #CCCCCC;
+}
+
+@media(max-width: 400px) {
+
+  .main__image{
+    flex: 100%;
+  }
 }
